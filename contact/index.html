@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+</head>
+<body>
+    <h1>Contact</h1>
+    <nav>
+        <a href="/">Home</a>
+        <a href="/projects/">Projects</a>
+        <a href="/contact/">Contact</a>
+        <a href="https://github.com/tranalex099" target="_blank">GitHub</a>
+    </nav>
+    <form action="mailto:alextran@mit.edu" method="post" enctype="text/plain">
+        <div>
+            <label for="email">Enter your email: </label>
+            <input type="email" name="email" id="email" required value="email@gmail.com"/>
+        </div>
+        <div>
+            <label for="subject">Subject: </label>
+            <input name="subject" id="subject" required value="test subject"/>
+        </div>
+        <div>
+            <label for="body">Body: </label>
+            <textarea id="body" name="body" rows="5" cols="30">Test Body</textarea>
+        </div>
+        <div>
+            <button type="button">Submit</button>
+        </div>
+    </form>
+</body>
+</html>
