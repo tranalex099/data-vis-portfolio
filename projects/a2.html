@@ -1,196 +1,228 @@
 <!DOCTYPE html>
-<html lang="en"><head>
-<meta http-equiv="content-type" content="text/html; charset=UTF-8">
-	<title>Vis &amp; Society Assignment 2</title>
-	<link rel="stylesheet" href="Vis%20&amp;%20Society%20Assignment%202_files/report.css">
-</head>
+<html lang="en">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <title>Vis &amp; Society Assignment 2</title>
+    <link
+      rel="stylesheet"
+      href="Vis%20&amp;%20Society%20Assignment%202_files/report.css"
+    />
+  </head>
 
-<body>
-	<header>
-		<h1>
-			<small>Assignment 2</small>
-			Exploratory Data Analysis
-		</h1>
+  <body>
+    <header>
+      <h1>
+        <small>Assignment 2</small>
+        Exploratory Data Analysis
+      </h1>
 
-		<p>
-			<strong>Alex Tran</strong> — <em>alextran@mit.edu</em>
-		</p>
-	</header>
-	<main>
-		<section>
-			<h2>Subtheme: Exclusionary Zoning</h2>
+      <p><strong>Alex Tran</strong> — <em>alextran@mit.edu</em></p>
+    </header>
+    <main>
+      <section>
+        <h2>Subtheme: Exclusionary Zoning</h2>
 
-			<h3>Overall Analysis Questions</h3>
-			<ol>
-				<li>
-					What and how severe are the demographic differences
-					between areas with exclusionary single-family zoning
-					and areas with more inclusive zoning regulations in
-					Metro Boston towns and cities?
-				</li>
-					<ul>
-						<li>
-							Motivation: In "Exclusionary by Design: An Investigation of
-							Zoning’s Use as a Tool of Race, Class, and Family Exclusion in
-							Boston’s Suburbs, 1920 to Today" zoning was historically used to
-							perpetuate racial and socioeconomic segregation. Exploring current
-							demographic differences can provide insights into the impact of
-							exclusionary zoning on various communities.
-						</li>
-					</ul>
-				<li>
-					To what extent does the prevalence of exclusionary
-					single-family zoning correlate with household income
-					in Metro Boston?
-				</li>
-					<ul>
-						<li>
-							Motivation: The article "Cities Start to Question an American Ideal: A
-							House With a Yard on Every Lot" discusses how exclusionary zoning
-							practices contribute to unaffordable housing, particularly for lower
-							and moderate-income households. Examining the relationship between
-							zoning regulations and household income can inform discussions on
-							the need for zoning reform.
-						</li>
-					</ul>
-				<li>
-					How do historical land use patterns through geography or
-					infrastructure contribute to current disparities in housing
-					zoning across Metro Boston municipalities?
-				</li>
-					<ul>
-						<li>
-							Motivation: In "Cities Start to Question an American Ideal: A
-							House With a Yard on Every Lot," certain cities show a correlation
-							between the presence of public transport routes and the prevalence
-							of single-family zoning, indicating a historical trend of land use
-							patterns influenced by infrastructure development. Understanding
-							the historical context of how geography and infrastructure have
-							shaped zoning regulations can provide insights into current
-							disparities in housing access and affordability.
-						</li>
-					</ul>
-			</ol>
-		</section>
+        <h3>Overall Analysis Questions</h3>
+        <ol>
+          <li>
+            What and how severe are the demographic differences between areas
+            with exclusionary single-family zoning and areas with more inclusive
+            zoning regulations in Metro Boston towns and cities?
+          </li>
+          <ul>
+            <li>
+              Motivation: In "Exclusionary by Design: An Investigation of
+              Zoning’s Use as a Tool of Race, Class, and Family Exclusion in
+              Boston’s Suburbs, 1920 to Today" zoning was historically used to
+              perpetuate racial and socioeconomic segregation. Exploring current
+              demographic differences can provide insights into the impact of
+              exclusionary zoning on various communities.
+            </li>
+          </ul>
+          <li>
+            To what extent does the prevalence of exclusionary single-family
+            zoning correlate with household income in Metro Boston?
+          </li>
+          <ul>
+            <li>
+              Motivation: The article "Cities Start to Question an American
+              Ideal: A House With a Yard on Every Lot" discusses how
+              exclusionary zoning practices contribute to unaffordable housing,
+              particularly for lower and moderate-income households. Examining
+              the relationship between zoning regulations and household income
+              can inform discussions on the need for zoning reform.
+            </li>
+          </ul>
+          <li>
+            How do historical land use patterns through geography or
+            infrastructure contribute to current disparities in housing zoning
+            across Metro Boston municipalities?
+          </li>
+          <ul>
+            <li>
+              Motivation: In "Cities Start to Question an American Ideal: A
+              House With a Yard on Every Lot," certain cities show a correlation
+              between the presence of public transport routes and the prevalence
+              of single-family zoning, indicating a historical trend of land use
+              patterns influenced by infrastructure development. Understanding
+              the historical context of how geography and infrastructure have
+              shaped zoning regulations can provide insights into current
+              disparities in housing access and affordability.
+            </li>
+          </ul>
+        </ol>
+      </section>
 
-		<section>
-			<h2>Discoveries &amp; Insights</h2>
+      <section>
+        <h2>Discoveries &amp; Insights</h2>
 
-			<figure>
-				<img src="Vis%20&amp;%20Society%20Assignment%202_files/muni-zoning.png" alt="">
-				<figcaption>
-				This chart compares the Metro Boston Municipals by the percentage
-				of single family zoning in each municipal. The data is skewed towards
-				a large portion of municipals that have no single family zoning. Each
-				data point in this dataset is a housing zone but something to be aware
-				of is that some municipals have two data entries; one for single family
-				zoning and another for multifamily zoning.
-				</figcaption>
-			</figure>
+        <figure>
+          <img
+            src="Vis%20&amp;%20Society%20Assignment%202_files/muni-zoning.png"
+            alt=""
+          />
+          <figcaption>
+            This chart compares the Metro Boston Municipals by the percentage of
+            single family zoning in each municipal. The data is skewed towards a
+            large portion of municipals that have no single family zoning. Each
+            data point in this dataset is a housing zone but something to be
+            aware of is that some municipals have two data entries; one for
+            single family zoning and another for multifamily zoning.
+          </figcaption>
+        </figure>
 
-			<figure>
-				<img src="Vis%20&amp;%20Society%20Assignment%202_files/avg-age-zoning.png" alt="Percentage of Single Family Housing in Metro Boston Municipals">
-				<figcaption>
-				Using the census data of the population of a municipal under 18,
-				18-64, and 65+, along with its total population, we are able to
-				approximate an average age for the municipal. This will let us
-				see any trends in age and zoning laws. However, aside from Milton
-				being an outlier, there seems to be no correlation between the age
-				of a municipal and the percentage of single family zoning though
-				another demographic may have a better correlation.
-				</figcaption>
-			</figure>
+        <figure>
+          <img
+            src="Vis%20&amp;%20Society%20Assignment%202_files/avg-age-zoning.png"
+            alt="Percentage of Single Family Housing in Metro Boston Municipals"
+          />
+          <figcaption>
+            Using the census data of the population of a municipal under 18,
+            18-64, and 65+, along with its total population, we are able to
+            approximate an average age for the municipal. This will let us see
+            any trends in age and zoning laws. However, aside from Milton being
+            an outlier, there seems to be no correlation between the age of a
+            municipal and the percentage of single family zoning though another
+            demographic may have a better correlation.
+          </figcaption>
+        </figure>
 
-			<figure>
-				<img src="Vis%20&amp;%20Society%20Assignment%202_files/percent-zoning-map.png" alt="Percentage of Single Family Housing in Metro Boston Municipals">
-				<figcaption>
-				This maps out the municipals according to their percentage of single
-				family zoning. Using this, we can look for any geographic trends that
-				might influence single family zoning. Through this visualization, it
-				seems that single family zoning is more prevalent in the South and
-				West of Metro Boston. Very rarely do we also see any single family
-				zoning near the coastline.
-				</figcaption>
-			</figure>
+        <figure>
+          <img
+            src="Vis%20&amp;%20Society%20Assignment%202_files/percent-zoning-map.png"
+            alt="Percentage of Single Family Housing in Metro Boston Municipals"
+          />
+          <figcaption>
+            This maps out the municipals according to their percentage of single
+            family zoning. Using this, we can look for any geographic trends
+            that might influence single family zoning. Through this
+            visualization, it seems that single family zoning is more prevalent
+            in the South and West of Metro Boston. Very rarely do we also see
+            any single family zoning near the coastline.
+          </figcaption>
+        </figure>
 
-			<figure>
-				<img src="Vis%20&amp;%20Society%20Assignment%202_files/map-white-zoning.png" alt="">
-				<figcaption>
-				As we are interested in the correlation between single family zoning
-				and demographics, we compare the percentage of single family zoning
-				and Non-Hispanic White population which we can calculate using the
-				population data. It generally seems that in urban areas we can expect
-				both to decrease. However, rural areas seem to not follow this
-				correlation as closely. This may be due to a lower population and
-				excess land available which leads to less needs for zoning. While
-				single family zoning follows Non-Hispanic White population decently
-				well, we should see if other factors such as gender income are better
-				predictors.
-				</figcaption>
-			</figure>
+        <figure>
+          <img
+            src="Vis%20&amp;%20Society%20Assignment%202_files/map-white-zoning.png"
+            alt=""
+          />
+          <figcaption>
+            As we are interested in the correlation between single family zoning
+            and demographics, we compare the percentage of single family zoning
+            and Non-Hispanic White population which we can calculate using the
+            population data. It generally seems that in urban areas we can
+            expect both to decrease. However, rural areas seem to not follow
+            this correlation as closely. This may be due to a lower population
+            and excess land available which leads to less needs for zoning.
+            While single family zoning follows Non-Hispanic White population
+            decently well, we should see if other factors such as gender income
+            are better predictors.
+          </figcaption>
+        </figure>
 
-			<figure>
-				<img src="Vis%20&amp;%20Society%20Assignment%202_files/percent-female-zoning.png" alt="">
-				<figcaption>
-				Looking at percentage of women in a municipal is shown to be a strong
-				predictor of single family zoning, at least in the instance of a large
-				percentage of women being highly correlated with a large percentage of
-				single family zoning. While certain demographic data is well correlated
-				with single family zoning, single family zoning has also been used to
-				discriminate against socioeconomic status and not just on race. This
-				leads us into our next question of income and zoning practices.
-				</figcaption>
-			</figure>
+        <figure>
+          <img
+            src="Vis%20&amp;%20Society%20Assignment%202_files/percent-female-zoning.png"
+            alt=""
+          />
+          <figcaption>
+            Looking at percentage of women in a municipal is shown to be a
+            strong predictor of single family zoning, at least in the instance
+            of a large percentage of women being highly correlated with a large
+            percentage of single family zoning. Something to be aware of when
+            charting the percentages are the duplicate entries mentioned before
+            so we should make sure to use weighted averages instead of the
+            normal average. This applies here and on all of the percentage and
+            average measurements calculated. While certain demographic data is
+            well correlated with single family zoning, single family zoning has
+            also been used to discriminate against socioeconomic status and not
+            just on race. This leads us into our next question of income and
+            zoning practices.
+          </figcaption>
+        </figure>
 
-			<figure>
-				<img src="Vis%20&amp;%20Society%20Assignment%202_files/hh-income-zoning.png" alt="">
-				<figcaption>
-				ENTER IMAGE CAPTION HERE.
-				</figcaption>
-			</figure>
+        <figure>
+          <img
+            src="Vis%20&amp;%20Society%20Assignment%202_files/hh-income-zoning.png"
+            alt=""
+          />
+          <figcaption>
+            Plotting the household income against the percentage of single
+            family zoning, we are able to see some correlation between the two.
+            If we do not consider the municipals with no single family zoning,
+            the correlation is much stronger. Something to note about the income
+            data is that it was taken four to eight years after the census data
+            and certain zoning areas that are too small lose some income data. While age here does seem to show any trends, political data on these municipals might in this instance.
+          </figcaption>
+        </figure>
 
-			<figure>
-				<img src="Vis%20&amp;%20Society%20Assignment%202_files/percent-white-zoning.png" alt="">
-				<figcaption>
-				ENTER IMAGE CAPTION HERE.
-				</figcaption>
-			</figure>
+        <figure>
+          <img
+            src="Vis%20&amp;%20Society%20Assignment%202_files/percent-white-zoning.png"
+            alt=""
+          />
+          <figcaption>In this chart, we go back to comparing Non-Hispanic Whites to the percentage of single family zoning. However, this time we also encode the data about municipal household income. Similar to above, we notice a slight correlation in the percentage of</figcaption>
+        </figure>
 
-			<figure>
-				<img src="Vis%20&amp;%20Society%20Assignment%202_files/percent-white-hh-income.png" alt="">
-				<figcaption>
-				ENTER IMAGE CAPTION HERE.
-				</figcaption>
-			</figure>
+        <figure>
+          <img
+            src="Vis%20&amp;%20Society%20Assignment%202_files/percent-white-hh-income.png"
+            alt=""
+          />
+          <figcaption>ENTER IMAGE CAPTION HERE.</figcaption>
+        </figure>
 
-			<figure>
-				<img src="Vis%20&amp;%20Society%20Assignment%202_files/percent-men-hh-income.png" alt="">
-				<figcaption>
-				ENTER IMAGE CAPTION HERE.
-				</figcaption>
-			</figure>
+        <figure>
+          <img
+            src="Vis%20&amp;%20Society%20Assignment%202_files/percent-men-hh-income.png"
+            alt=""
+          />
+          <figcaption>ENTER IMAGE CAPTION HERE.</figcaption>
+        </figure>
 
-			<figure>
-				<img src="Vis%20&amp;%20Society%20Assignment%202_files/multi-single-zoning.png" alt="">
-				<figcaption>
-				ENTER IMAGE CAPTION HERE.
-				</figcaption>
-			</figure>
+        <figure>
+          <img
+            src="Vis%20&amp;%20Society%20Assignment%202_files/multi-single-zoning.png"
+            alt=""
+          />
+          <figcaption>ENTER IMAGE CAPTION HERE.</figcaption>
+        </figure>
 
-			<figure>
-				<img src="Vis%20&amp;%20Society%20Assignment%202_files/percent-mbta-zoning.png" alt="">
-				<figcaption>
-				ENTER IMAGE CAPTION HERE.
-				</figcaption>
-			</figure>
-		</section>
+        <figure>
+          <img
+            src="Vis%20&amp;%20Society%20Assignment%202_files/percent-mbta-zoning.png"
+            alt=""
+          />
+          <figcaption>ENTER IMAGE CAPTION HERE.</figcaption>
+        </figure>
+      </section>
 
-		<section>
-			<h2>Summary</h2>
+      <section>
+        <h2>Summary</h2>
 
-			<p>WRITE FINAL SUMMARY HERE.</p>
-		</section>
-	</main>
-
-
-</body></html>
+        <p>WRITE FINAL SUMMARY HERE.</p>
+      </section>
+    </main>
+  </body>
+</html>
