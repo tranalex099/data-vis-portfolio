@@ -125,6 +125,11 @@ figure {
 	}
 }
 
+img {
+	width: 100%;
+	height: auto;
+  }
+
 .rotate-image {
            
 	/* Adjust the angle as needed */
